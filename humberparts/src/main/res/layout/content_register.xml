@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/setting"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="humberparts.walkingprogrammers.settingActivity"
+    tools:showIn="@layout/activity_register" >
+
+    <ProgressBar
+        android:id="@+id/progressBar9"
+        style="@android:style/Widget.Holo.ProgressBar.Large"
+        android:progressDrawable="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:ems="10"
+        android:id="@+id/admin_name"
+        android:textSize="25sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:inputType="textPersonName"
+        android:hint="@string/email"
+        android:ems="10"
+        android:id="@+id/Email"
+        android:textSize="25sp"
+        android:lineSpacingExtra="30sp"
+        android:selectAllOnFocus="false"
+        android:textAlignment="viewStart"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Register!"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerhere"
+        android:layout_alignBaseline="@+id/registerhere"
+        android:layout_alignBottom="@+id/registerhere"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary" />
+
+
+</LinearLayout>
